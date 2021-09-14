@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="description" content="translat.io - your translation services"/>
+	<meta name="author" content="Mateusz Kubisiak"/>
+
+	<title>translat.io - translation request form</title>
+    
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet"/> 
+
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/b93a922a0f.js"></script>
+
+	<link rel="stylesheet" href="css/styles.css" media="screen"/>
+
+  <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="form-modal animate__animated animate__slideInDown">
+                <h1 class="display-4">translat.io</h1>
+                <p class="lead"><em>translation form</em></p>
+                <hr class="my-4">
+
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="brdcrmb-link breadcrumb-item underlineHover"><a href="index.html">Home</a></li>
+                      <li class="breadcrumb-item active">Translation form</li>
+                    </ol>
+                </nav>
+
+                <div class="p-3 mb-2 container">
+                  <form>
+                    <div class="row">
+                      <h4>Company credentials</h4>
+                      <hr>
+                      <p class="subtext">Please fill in informations about your company and your company's representative.</p>
+                    </div>
+                    <div class="row mb-2 justify-content-center">
+                        <div class="col-sm-4">
+                          <div class="form-outline">
+                            <input type="text" id="formFirstname" class="form-control" required/>
+                            <label class="form-label mb-label required" for="formFirstname">First name</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-4 offset-sm-1">
+                          <div class="form-outline">
+                            <input type="text" id="formLastname" class="form-control" required/>
+                            <label class="form-label mb-label required" for="formLastname">Last name</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-2 justify-content-center">
+                        <div class="col-sm-9">
+                          <div class="form-outline">
+                            <input type="text" id="formCompanyname" class="form-control" required/>
+                            <label class="form-label mb-label required" for="formCompanyname">Company name</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-2 justify-content-center">
+                        <div class="col-sm-9">
+                          <div class="form-outline">
+                            <input type="text" id="formAddress" class="form-control" required/>
+                            <label class="form-label mb-label required" for="formAddress">Address</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-2 justify-content-center">
+                        <div class="col-sm-9">
+                          <div class="form-outline">
+                            <input type="text" id="formAddress2" class="form-control" required/>
+                            <label class="form-label mb-label optional" for="formAddress2">Address 2nd line</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-2 justify-content-center">
+                        <div class="col-sm-2">
+                          <div class="form-outline">
+                            <input type="text" id="formZIP" class="form-control" required/>
+                            <label class="form-label mb-label required" for="formZIP">Postal Code / ZIP</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="form-outline">
+                            <input type="text" id="formCity" class="form-control" required/>
+                            <label class="form-label mb-label required" for="formCity">City</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="form-outline">
+                            <select class="form-control form-select" id="formCountrySelect">
+                              <option selected>Select</option>
+                              <option>Germany</option>
+                              <option>Japan</option>
+                              <option>Poland</option>
+                              <option>USA</option>
+                            </select>
+                            <label class="form-label mb-label required" for="formCountrySelect">Country</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-3 justify-content-center">
+                        <div class="col-sm-4">
+                          <div class="form-outline">
+                            <input type="tel" id="formPhone" class="form-control" required/>
+                            <label class="form-label mb-label required" for="formPhone">Phone</label>
+                          </div>
+                        </div>
+                        <div class="col-sm-5">
+                          <div class="form-outline">
+                            <input type="email" id="formEmail" class="form-control" required/>
+                            <label class="form-label mb-label required" for="formEmail">Email</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-1">
+                        <div class="col">
+                          <p class="text-end subtext">Fields marked with <span style="color: #913232;">* </span> are obligatory.</p>
+                        </div>
+                      </div>
+                      <div class="row mt-2">
+                        <h4>Translation details</h4>
+                        <hr>
+                        <p class="subtext">Please fill in informations about your text and presumed translation.</p>
+                      </div>
+                      <div class="row mb-2 justify-content-center">
+                        <div class="col-4">
+                          <div class="form-outline">
+                            <select class="form-control form-select" id="formSourceLanguageSelect">
+                              <option selected>Select</option>
+                              <option>English</option>
+                              <option>German</option>
+                              <option>Japanese</option>
+                              <option>Polish</option>
+                            </select>
+                            <label class="form-label required" for="formSourceLanguageSelect">Document language</label>
+                          </div>
+                        </div>
+                        <div class="col-1 text-center">
+                          <i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="col-4">
+                          <div class="form-outline">
+                            <select class="form-control form-select" id="formTargetLanguageSelect">
+                              <option selected>Select</option>
+                              <option>English</option>
+                              <option>German</option>
+                              <option>Japanese</option>
+                              <option>Polish</option>
+                            </select>
+                            <label class="form-label required" for="formTargetLanguageSelect">Translation language</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-2 justify-content-center">
+                        <div class="col-sm-4 offset-sm-1 text-center">
+                          <div class="form-outline">
+                            <label class="form-check-label btn btn-custom btn-w-icon align-self-center" for="translationUpload"><div class="mb-2"><i class="fas fa-file-upload"></i></div> <div>Upload your document</div></label>
+                            <input type="file" id="translationUpload" name="translationUpload" accept=".doc,.docx,.pdf,.odt" hidden>
+                          </div>
+                        <p class="subtext">Acceptable file extensions: <code>.docx, .doc, .pdf, .odt</code></p>
+                        </div>
+                        <div class="col-sm-5 offset-sm-1">
+                          <label class="form-check-label radio-grid-label-h required" for="gridRadios">What will be the purpose of translation?</label>
+                          <fieldset class="form-group">
+                            <div class="col-sm-10">
+                              <div class="custom-control custom-radio custom-control-inline">
+                                <div class="form-check form-check-inline">
+                                  <input class="custom-control-input form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="Certified translation">
+                                  <label class="form-check-label radio-grid-label-opt" for="gridRadios1">
+                                    certified translation
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="custom-control-input form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="Business intention">
+                                  <label class="form-check-label radio-grid-label-opt" for="gridRadios2">
+                                    business intention
+                                  </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input class="custom-control-input form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="Website publication">
+                                  <label class="form-check-label radio-grid-label-opt" for="gridRadios3">
+                                    web publication
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="custom-control-input form-check-input" type="radio" name="gridRadios" id="gridRadios4" value="Private purpose">
+                                  <label class="form-check-label radio-grid-label-opt" for="gridRadios4">
+                                    private purpose
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </fieldset>
+                        </div>
+                      </div>
+                      <div class="row my-2 justify-content-center">
+                        <div class="col-lg-4 offset-lg-1">
+                          <div class="form-floating">
+                            <textarea class="form-control" id="formAdditional" style="height: 100px;"></textarea>
+                            <label class="form-check-label optional" for="formAdditional">Additional information</label>
+                          </div>
+                        </div>
+                        <div class="col-lg-5 offset-sm-1">
+                          <div class="form-outline mt-1">
+                            <label class="form-label required" for="formDeadline">Translation deadline</label>
+                            <input type="date" id="formDeadline" class="form-date" required/>
+                          </div>
+                          <div class="form-outline form-check-inline">
+                            <label class="form-label required" for="formSourceLanguageSelect">Do you need an invoice?</label>
+                            <select class="form-control form-select form-control-inline" id="formSourceLanguageSelect" required>
+                              <option selected>Select</option>
+                              <option>Yes</option>
+                              <option>No</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="row my-3 justify-content-center">
+                      <div class="col-sm-5">
+                        <div class="form-check">
+                          <input class="form-check-input custom-control-input" type="checkbox" value="" id="formTosAgreement" required>
+                          <label class="form-check-label mb-label required" for="formTosAgreement">
+                            By clicking <strong>Submit</strong> you agree to our privacy policy and terms and conditions of use.
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input custom-control-input" type="checkbox" value="" id="formPersonalDataAgreement" required>
+                          <label class="form-check-label mb-label required" for="formPersonalDataAgreement">
+                            By clicking <strong>Submit</strong> you allow us to process your personal data.
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input custom-control-input" type="checkbox" value="" id="flexCheckChecked">
+                          <label class="form-check-label mb-label" for="flexCheckChecked">
+                            Subscribe to our newsletter to collect coupons, newest legal regulations and keep in touch with our services.
+                          </label>
+                          <!--There is not (OPTIONAL) note on purpose-->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row mt-3 justify-content-center">
+                      <div class="col-sm-2 text-center">
+                        <button class="btn btn-custom btn-w-icon" type="submit">
+                          <i class="fas fa-check"></i>
+                          Submit form
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>  
+                <hr class="my-4">
+                <div class="row">
+                  <div class="col text-center">
+                      <a class="btn btn-custom btn-w-icon" href="index.html" role="button">
+                          <i class="fas fa-angle-left"></i></i>Go back
+                      </a>
+                      <a class="btn btn-custom btn-w-icon" href="#" role="button" disabled>
+                          <i class="fas fa-comments"></i>Contact
+                      </a>
+                  </div>
+                </div>
+                <footer>
+                  <div class="row">
+                    <div class="col text-center footer-note">
+                      © 2008 - <script>document.write(new Date().getFullYear())</script> <a href="#">translat.io</a>, All rights reserved
+                    </div>
+                  </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>

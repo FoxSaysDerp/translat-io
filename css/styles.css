@@ -1,0 +1,366 @@
+body {
+    background-color: #e7e7e7;
+    font-family: Roboto;
+    font-weight: 300;
+    color: #131313;
+}
+
+a {
+    color: #913232;
+    text-decoration: none;
+}
+
+a:active, a:focus, a:hover {
+    color: #771e1e;
+    text-decoration: solid;
+}
+
+::selection {
+  background: #ffa1a152;
+}
+
+::-moz-selection {
+  background: #ffa1a152;
+}
+
+code {
+  color: #913232;
+}
+
+.col-centered {
+  margin: 0 auto;
+  float: none;
+}
+
+.fas {
+    font-size: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1vw;
+}
+
+.fa-arrow-right {
+  display: inline-block;
+  text-align: center;
+  vertical-align: bottom;
+  color: #949494;
+  margin-top: 4px;
+  margin-right: 0px !important;
+  font-size: 22px;
+}
+
+.fa-file-upload {
+  margin-right: 0px !important;
+}
+
+label > div > .fas {
+  font-size: 26px;
+}
+
+h4 {
+  text-transform: lowercase;
+  font-weight: 300;
+  color: #999;
+  font-size: 24px;
+  margin-bottom: -5px;
+}
+
+.h4-underline {
+  background-color: #999999;
+  height: 4px;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.jumbotron {
+    background-color: #fdfdfd;
+    display: inline-block;
+    margin: 2em;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.form-modal {
+    background-color: #fdfdfd;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.btn.hover,
+.btn:hover,
+.btn.focus
+.btn:focus,
+.btn.active,
+.btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn-custom {
+  background-color: #913232;
+  color: #fdfdfd;
+  font-weight: 500;
+  padding: 1em 1em 1em 1em;
+  margin-bottom: 1em;
+}
+
+.btn-w-icon {
+  padding: 1em 1.5em 1em 1em !important;
+}
+
+.btn-custom:hover {
+    background-color: #cc6565;
+    color: #ffffff;
+}
+
+.btn-custom:active {
+    background-color: #691b1b;
+    color: #d3d3d3;
+}
+
+.btn-custom[disabled],.btn-custom:disabled {
+    background-color: #976767;
+    color: #ffffff;
+}
+
+label.btn-custom {
+  padding: 1em 1em 1em 1em !important;
+}
+
+.valign-upload {
+  display: inline-flexbox;
+  align-items: center;
+  justify-content: center;
+}
+
+.breadcrumb {
+    background-color: #ffeeee;
+    padding: 4px 8px;
+    border-radius: 16px;
+    min-width: 210px;
+    max-width: 18vmax;
+}
+
+.brdcrmb-link {
+    font-weight: 500;
+}
+
+.footer-note {
+  font-weight: 400;
+  font-size: 10px;
+  color: #666666;
+}
+
+/* form */
+p.subtext {
+  font-weight: 400;
+  color:#666666;
+  font-size: 12px;
+}
+
+div.col > p.subtext {
+  margin-bottom: 0.7vh 0 0.5vh 0;
+}
+
+.mb-label {
+  margin-bottom: 1rem !important;
+}
+
+label.required::after {
+  content: "*";
+  color: #913232;
+  margin-left: 2px;
+}
+
+label.required-inverted::after {
+  content: "*";
+  color: #dbdbdb;
+  margin-left: 2px;
+}
+
+label.optional {
+  color: #666666;
+}
+
+label.optional::after {
+  vertical-align: middle;
+  content: "OPTIONAL";
+  color: 636363;
+  font-size: 8px;
+  background-color: #dcdcdc;
+  padding: 2px 4px;
+  border-radius: 20px;
+  margin-left: 4px;
+}
+
+.radio-grid-label-h {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.radio-grid-label-opt {
+  font-weight: 300;
+  font-size: 14px;
+  color: #5c5c5c;
+  vertical-align: middle;
+}
+
+select,
+input.form-date {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  color:#7c7c7c !important;
+}
+
+input[type="date"] {
+  border: 1px solid #d4d9de;
+  border-radius: 4px;
+  padding: 6px 0px 6px 6px;
+}
+
+input.form-date {
+  margin-left: 1vw;
+}
+
+.custom-control-input:checked {
+  background-color: #913232;
+  border-color: #5a1717 !important;
+}
+
+.custom-control-input:active {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.custom-control-input:focus~.custom-control-indicator {
+  -webkit-box-shadow: 0 0 0 1px #fff, 0 0 0 3px #0275d8;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 3px #0275d8;
+}
+
+.form-control-inline {
+  width: auto;
+  display: inline-block;
+}
+
+
+textarea:focus,
+select:focus,
+input[type="text"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+.uneditable-input:focus {   
+  border-color: #b85c5c !important;
+  box-shadow: 0 1px 1px #cc8888 inset, 0 0 8px #a76b6b !important;
+  outline: 0 none;
+}
+
+
+/* animations */
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  @-webkit-keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  
+  .fadeIn {
+    opacity:0;
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+  
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+  
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+  }
+  
+  .fadeIn.first {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+  }
+  
+  .fadeIn.second {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+  }
+  
+  .fadeIn.third {
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+  }
+  
+  .fadeIn.fourth {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+  
+  
+  .underlineHover:after {
+    display: block;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+    background-color: #913232;
+    content: "";
+    transition: width 0.2s;
+  }
+  
+  .underlineHover:hover {
+    color: #0d0d0d;
+  }
+  
+  .underlineHover:hover:after{
+    width: 100%;
+  }
+  
+  
